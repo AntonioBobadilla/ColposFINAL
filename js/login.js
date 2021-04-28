@@ -19,7 +19,7 @@ function postUser() {
     success: function(data){
       console.log(data);
       if(data.error){
-        $('.error').html("Tas pendejo, tus datos estan mal");
+        $('.error').html("Datos incorrectos.");
       }else{
           console.log("asdasd");
           myStorage = window.localStorage;
