@@ -14,7 +14,7 @@ function postUser() {
     contentType: 'application/json',
     success: function(data){
       if(data.error){
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
       }
       $('#texto1').html(data.datosUsuarios[0].nombre);
       $('#texto2').html(data.user[0].usuario);
@@ -44,5 +44,5 @@ function cerrar(){
   storage = window.localStorage;
   storage.removeItem("user");
   storage.removeItem("pass");
-  window.location.href = 'index.html';
+  window.location.href = 'login.html';
 }

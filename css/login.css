@@ -1,9 +1,10 @@
 @import url('globales.css');
- 
+
 * {
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
+  cursor: url('../img/cursor.cur'), default;
 }
 
 .container-flex {
@@ -20,7 +21,7 @@
 
 }
 
-.container-flex .container-izq .img { 
+.container-flex .container-izq .img {
 	width: 30vw;
 	height: auto;
 }
@@ -29,7 +30,7 @@
 	max-width: 100%;
 	max-height: 100%;
 
-} 
+}
 
 .container-flex .container-izq  h1 {
 	font-size:32px;
@@ -63,6 +64,10 @@
 	outline: none;
 }
 
+.container-flex .container-izq .card  input[type="text"]:hover{
+  cursor: url('../img/cursorHW.cur'), pointer;
+}
+
 .container-flex .container-izq  input[type="submit"]{
 	margin-top: 50px;
 	border:none;
@@ -77,7 +82,7 @@
 }
 
 .container-flex .container-izq  input[type="submit"]:hover {
-	cursor: pointer;
+	cursor: url('../img/cursorHW.cur'), pointer;
 }
 
 .container-flex .container-izq .labels {
@@ -104,7 +109,7 @@
 	background: #7371FC;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 }
 
 .container-flex .container-der .img-svg {
@@ -117,6 +122,12 @@
 	height: 100%;
 }
 
+.error{
+  font-size: 23px;
+  list-style: none;
+  color: red;
+}
+
 /*  RESPONSIVE  */
 
 
@@ -124,7 +135,6 @@
 	.container-flex {
 		flex-direction: column;
 	}
-
 	.container-flex .container-der {
 		width: 100%;
 		height: auto;
@@ -133,8 +143,6 @@
 		width: 100%;
 		height: auto;
 	}
-
-
 }
 
 @media screen and (max-width: 560px ) {

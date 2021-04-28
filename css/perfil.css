@@ -21,7 +21,8 @@ body{
 }
 
 .header .logo{
-  background-image: url('https://rockcontent.com/es/wp-content/uploads/sites/3/elementor/thumbs/foto-de-perfil-para-instagram-p2dhuh4pr2us0choktd4ad3eiwbrwixog88ieqy47g.png');
+  background-color: white;
+  background-image: url('../img/colpos-1.png');
   background-position: center left;
   background-repeat: no-repeat;
   background-size: contain;

@@ -19,21 +19,14 @@ function postUser() {
     success: function(data){
       console.log(data);
       if(data.error){
-
-        alert("error !");
-      } else {
-
-          alert("alo !");   
+        $('.error').html("Tas pendejo, tus datos estan mal");
+      }else{
           console.log("asdasd");
           myStorage = window.localStorage;
-
           localStorage.setItem('user', usuario);
           localStorage.setItem('pass', pwd);
-       
-
-
+          window.location.href = 'user.html';
       }
-      
     },
     data: myuser
   });
@@ -42,5 +35,4 @@ function postUser() {
 
 function control(){
   postUser();
-  postUser();
-} 
+}
