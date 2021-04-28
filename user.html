@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="css/perfil.css">
+  </head>
+
+  <body onload="control()">
+    <div class="header">
+      <div class="logo">
+      </div>
+    </div>
+    <div class="perfil">
+      <div class="usuario">
+        <div class="foto" id="fotito"></div>
+        <div class="texto">
+          <h3 id="texto1"></h3>
+          <p id="texto2"></p>
+        </div>
+      </div>
+      <div class="botoncito">
+      <button type="button" class="cerrarSesion" onclick="cerrar()">Cerrar la sesion</button>
+      <button type="button" class="cerrarSesion" onclick="redirect1()">Ver mis productos</button>
+      </div>
+
+      <section class="datos">
+        <p class="titulo">Informacion de perfil</p>
+        <div class="informacion">
+        </div>
+        <div class="botones">
+          <button type="button" class="button">Modificar los Datos</button>
+          <button type="button" class="button">Cambiar Contraseña</button>
+        </div>
+      </section>
+    </div>
+  </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/user.js"></script>
+
+</html>

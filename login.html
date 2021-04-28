@@ -11,22 +11,24 @@
 	<section class="container-flex">
 		<div class="container-izq">
 			<div class="img">
-				<img src="img/colpos.png" alt="">		
+				<img src="img/colpos-1.png" alt="">
 			</div>
 
 			<h1>Login</h1>
-			<form action="#">
+			<li class="error" ></li>
+			<form action="javascript:void(0);">
 				<div class="card">
 					<label for="usuario">Nombre de usuario</label>
-					<input type="text" id="usuario" name="usuario">
+					<input type="text" id="usuario" name="usuario" required>
 				</div>
 
 				<div class="card">
-					<label for="contraseña">Contraseña</label>
-					<input type="text" id="contraseña" name="contraseña">
+					<label for="contrasena">Contraseña</label>
+					<input type="password" id="contrasena" name="contraseña" required>
 				</div>
 
-				<input type="submit" value="iniciar sesion">
+				<input type="submit" value="iniciar sesion" onclick="control()">
+
 			</form>
 
 			<div class="labels">
@@ -36,11 +38,12 @@
 		</div>
 		<div class="container-der">
 			<div class="img-svg">
-				<img src="img/plant.svg" alt="">
+				<img src="img/plant-1.svg" alt="">
 			</div>
-			
+
 		</div>
 	</section>
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>
