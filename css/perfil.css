@@ -1,3 +1,10 @@
+:root{
+  --color-primario: #eee;
+  --color-gris-primario: #474747;
+  --color-gris-secundario: #8F8F8F;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -12,6 +19,7 @@ a{
 body{
   width: 95vw;
   height: 100vh;
+  background-color: var(--color-primario);
 }
 
 .header{
@@ -21,7 +29,7 @@ body{
 }
 
 .header .logo{
-  background-color: white;
+  background-color: var(--color-primario);
   background-image: url('../img/colpos-1.png');
   background-position: center left;
   background-repeat: no-repeat;
@@ -68,30 +76,36 @@ body{
   padding: 30px;
   height: 100%;
   font-size: 2.5rem;
-  color: #8F8F8F;
+  color: var(--color-gris-secundario);
 }
 
 .usuario .texto h3{
-  color: #474747;
+  color: var(--color-gris-primario);
 }
 
 .botoncito{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
 }
 
 .botoncito .cerrarSesion{
-  width: 30%;
+  width: 60%;
   min-width: 250px;
   height: 50px;
   margin: 0 auto;
   font-size: 1.7rem;
   border-radius: 0.5rem;
   background-color: #FE5E41;
-  color: #eee;
+  color: var(--color-primario);
   box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
   cursor: url('../img/cursorHW.cur'), pointer;
+  transition: 0.4s;
+}
+
+.botoncito .cerrarSesion:hover{
+  transform: scale(1.05) translate(0, 8px);
 }
 
 .datos{
@@ -127,6 +141,8 @@ body{
   content: ': '
 }
 
+
+
 .datos .botones{
   display: grid;
   margin: 40px 0;
@@ -156,6 +172,12 @@ body{
   }
   .datos .informacion .parametro{
     margin: auto;
+  }
+
+  .botoncito{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 15px;
   }
 
   .datos .botones{
