@@ -17,6 +17,7 @@
 
 .container-flex .container-izq {
 	width: 50%;
+	height: 100vh;
 	padding:60px 80px 100px 130px;
 
 }
@@ -57,14 +58,16 @@
 	margin-top: 20px;
 }
 
-.container-flex .container-izq .card  input[type="text"]{
+.container-flex .container-izq .card  input[type="text"],
+.container-flex .container-izq .card  input[type="password"]{
 	border:none;
 	border-bottom: 1px solid black;
 	margin-top: 19px;
 	outline: none;
 }
 
-.container-flex .container-izq .card  input[type="text"]:hover{
+.container-flex .container-izq .card  input[type="text"]:hover,
+.container-flex .container-izq .card  input[type="password"]:hover{
   cursor: url('../img/cursorHW.cur'), pointer;
 }
 
@@ -106,6 +109,7 @@
 
 .container-flex .container-der {
 	width: 50%;
+	height: 100vh;
 	background: #7371FC;
 	display: flex;
 	justify-content: center;
@@ -123,6 +127,7 @@
 }
 
 .error{
+	margin-top: 10px;
   font-size: 23px;
   list-style: none;
   color: red;
