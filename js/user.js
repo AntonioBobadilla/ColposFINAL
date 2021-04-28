@@ -46,3 +46,7 @@ function cerrar(){
   storage.removeItem("pass");
   window.location.href = 'login.html';
 }
+
+function redirect1(){
+  window.location.href = 'misProductos.html';
+}
