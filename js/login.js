@@ -43,4 +43,4 @@ function postUser() {
 function control(){
   postUser();
   postUser();
-}
+} 
