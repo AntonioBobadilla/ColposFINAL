@@ -15,18 +15,21 @@
 			</div>
 
 			<h1>Login</h1>
+			<li class="error" ></li>
 			<form action="#">
 				<div class="card">
 					<label for="usuario">Nombre de usuario</label>
-					<input type="text" id="usuario" name="usuario">
+					<input type="text" id="usuario" name="usuario" required>
 				</div>
 
 				<div class="card">
-					<label for="contraseña">Contraseña</label>
-					<input type="text" id="contraseña" name="contraseña">
+					<label for="contrasena">Contraseña</label>
+					<input type="text" id="contrasena" name="contraseña" required>
 				</div>
 
-				<input type="submit" value="iniciar sesion">
+				<input type="submit" value="iniciar sesion" onclick="control()">
+				
+
 			</form>
 
 			<div class="labels">
@@ -41,6 +44,7 @@
 			
 		</div>
 	</section>
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>
