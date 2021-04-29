@@ -7,23 +7,19 @@
     <link rel="stylesheet" href="css/userProductos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   </head>
-  <body>
+  <body onload="getProducts()">
     <div class="contenedor">
 
-      <div class='tarjeta'>
-        <div class='imagen' style='background-image: url(https://wowfilters.s3.amazonaws.com/content-images/neon-night-makeup-effect-screenshot-2.jpg)'></div>
-        <button type='button' onclick='editar(1)' id='editar'><i class='fas fa-edit'></i></button>
-        <button type='button' onclick='borrar(1)' id='borrar'><i class='fas fa-minus-circle'></i></button>
-        <div class='Informacion'>
-          <p id='nombre'><mark>Nombre del producto</mark></p>
-          <p id='detalle'>50.00<label id="cantidad">5</label></p>
-          <p id='descripcion'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
+
 
 
     </div>
+
+    <div class="boton">
+      <button type="button" id="registrar" onclick="registrar()" title="Registrar nuevo producto"><i class="fas fa-plus-circle"></i></button>
+    </div>
   </body>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/userProductos.js"></script>
 
