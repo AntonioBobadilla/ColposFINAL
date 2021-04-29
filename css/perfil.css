@@ -8,8 +8,8 @@
 *{
   margin: 0;
   padding: 0;
-  border: 0;
   cursor: url('../img/cursor.cur'), default;
+  box-sizing: border-box;
 }
 
 a{
@@ -17,8 +17,6 @@ a{
 }
 
 body{
-  width: 95vw;
-  height: 100vh;
   background-color: var(--color-primario);
 }
 
