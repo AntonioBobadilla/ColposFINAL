@@ -8,7 +8,7 @@
 *{
   margin: 0;
   padding: 0;
-  cursor: url('../img/cursor.cur'), default;
+  cursor: default;
   box-sizing: border-box;
 }
 
@@ -98,7 +98,7 @@ body{
   background-color: #FE5E41;
   color: var(--color-primario);
   box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
-  cursor: url('../img/cursorHW.cur'), pointer;
+  cursor: pointer;
   transition: 0.4s;
 }
 
@@ -160,7 +160,7 @@ body{
 }
 
 .datos .botones .button:hover{
-  cursor: url('../img/cursorHW.cur'), pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
