@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/globales.css/">
+	<link rel="stylesheet" type="text/css" href="css/globales.css">
 	<link rel="stylesheet" href="css/navbar.css">
 	<link rel="stylesheet" href="css/categorias.css">
 	<title>Categorías</title>
 </head>
-<body>
+<body onload="categorias()">
 
 	<header>
 	<nav >
@@ -34,62 +34,18 @@
 
 	<section class="contenedor">
 		<div class="titulo-categorias">
-			<h1>Categorías</h1>		
+			<h1>Categorías</h1>
 		</div>
 
 		<div class="wrap-categorias">
 
-			<div class="card">
-				<div class="imagen-card">
-					<img src="https://i.blogs.es/13d967/1366_20001/1366_2000.jpg" alt="">
-				</div>
-				<button class="hamburger" id="hamburger">
-					
-				</button>
-				<div class="titulo-card">
-					<a href="#">Semillas</a>
-				</div>
-			</div>
 
-			<div class="card">
-				<div class="imagen-card">
-					<img src="https://i.blogs.es/13d967/1366_20001/1366_2000.jpg" alt="">
-				</div>
-				<div class="titulo-card">
-					<a href="#">Semillas</a>
-				</div>
-			</div>
-			
-			<div class="card">
-				<div class="imagen-card">
-					<img src="https://i.blogs.es/13d967/1366_20001/1366_2000.jpg" alt="">
-				</div>
-				<div class="titulo-card">
-					<a href="#">Semillas</a>
-				</div>
-			</div>
 
-			<div class="card">
-				<div class="imagen-card">
-					<img src="https://i.blogs.es/13d967/1366_20001/1366_2000.jpg" alt="">
-				</div>
-				<div class="titulo-card">
-					<a href="#">Semillas</a>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="imagen-card">
-					<img src="https://i.blogs.es/13d967/1366_20001/1366_2000.jpg" alt="">
-				</div>
-				<div class="titulo-card">
-					<a href="#">Semillas</a>
-				</div>
-			</div>
-			
 		</div>
 
 	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/categorias.js"></script>
 	<script src="js/navbar.js"></script>
 </body>
 </html>
