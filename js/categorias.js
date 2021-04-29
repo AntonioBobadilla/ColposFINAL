@@ -30,6 +30,7 @@ function categorias() {
 function redireccion(n, f){
   if(n != 0){
     window.location.href = 'productos.html?id='+n+'&nombre='+f;
+  }else{
+    window.location.href = 'productos.html';
   }
-  window.location.href = 'productos.html';
 }

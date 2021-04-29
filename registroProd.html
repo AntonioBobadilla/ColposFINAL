@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Regitra un producto</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/globales.css">
+      <link rel="stylesheet" href="css/navbar.css">
+      <link rel="stylesheet" href="css/registroProd.css">
+  </head>
+  <body onload="categorias()">
+    <header>
+      <nav >
+        <div class="nav-logo">
+          <a href="categorias.html">
+            <img src="img/colpos-1.png" alt="">
+          </a>
+
+        </div>
+
+        <ul id="nav">
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="usuarios.html">Usuarios</a></li>
+          <li><a href="user.html">Perfil</a></li>
+          <li><a href="#">Cerrar Sesión</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+  </header>
+  <h1>Registro de nuevos productos</h1>
+    <form class="formulario" id="formulario" action="javascript:void(0)">
+      <input type="text" placeholder="Nombre" id="nombre" value="">
+      <input type="text" placeholder="Descripcion" id="descripcion" value="">
+      <input type="text" placeholder="Imagen" id="imagen" value="">
+      <input type="text" placeholder="Disponibles" id="disponibles" value="">
+      <input type="text" placeholder="Precio" id="precio" value="">
+      <div class="checks">
+
+      </div>
+      <input type="submit" value="Registrar Producto" onclick="enviar()">
+    </form>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/registroProd.js"></script>
+</html>
