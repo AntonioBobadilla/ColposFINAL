@@ -4,14 +4,34 @@
   <head>
     <meta charset="utf-8">
     <title>Mi Perfil</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/globales.css">
     <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/navbar.css">
   </head>
 
   <body onload="control()">
-    <div class="header">
-      <div class="logo">
-      </div>
+<header>
+  <nav >
+    <div class="nav-logo">
+      <a href="categorias.html">
+        <img src="img/colpos-1.png" alt="">
+      </a>
+
     </div>
+
+    <ul id="nav">
+      <li><a href="categorias.html">Categorias</a></li>
+      <li><a href="usuarios.html">Usuarios</a></li>
+      <li><a href="user.html">Perfil</a></li>
+      <li><a href="#">Cerrar Sesión</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+</header>
+
     <div class="perfil">
       <div class="usuario">
         <div class="foto" id="fotito"></div>
@@ -38,6 +58,7 @@
   </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/navbar.js"></script>
 <script src="js/user.js"></script>
 
 </html>
