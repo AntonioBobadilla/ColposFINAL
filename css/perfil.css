@@ -1,0 +1,205 @@
+:root{
+  --color-primario: #eee;
+  --color-gris-primario: #474747;
+  --color-gris-secundario: #8F8F8F;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  cursor: url('../img/cursor.cur'), default;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: var(--color-primario);
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px #999999 solid;
+}
+
+.header .logo{
+  background-color: var(--color-primario);
+  background-image: url('../img/colpos-1.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 80px;
+  border: 10px transparent solid;
+}
+
+.header .logo:hover,
+.header .logo:focus{
+  transform: translate(10px, 0px);
+}
+
+.perfil{
+  width: 86%;
+  height: auto;
+  margin-left: 7%;
+  box-sizing: border-box;
+}
+
+.usuario{
+  width: 90%;
+  height: 300px;
+  margin: 30px auto 30px auto;
+  display: grid;
+  grid-template-columns: minmax(300px, 30%) minmax(100px,70%);
+}
+
+.usuario .foto{
+  background-color: #5A7684;
+  background-image: url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/08/fotos-perfil-whatsapp_16.jpg?itok=fl2H3Opv');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+}
+
+.usuario .foto:hover{}
+
+.usuario .texto{
+  padding: 30px;
+  height: 100%;
+  font-size: 2.5rem;
+  color: var(--color-gris-secundario);
+}
+
+.usuario .texto h3{
+  color: var(--color-gris-primario);
+}
+
+.botoncito{
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+}
+
+.botoncito .cerrarSesion{
+  width: 60%;
+  min-width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  background-color: #FE5E41;
+  color: var(--color-primario);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+  cursor: url('../img/cursorHW.cur'), pointer;
+  transition: 0.4s;
+}
+
+.botoncito .cerrarSesion:hover{
+  transform: scale(1.05) translate(0, 8px);
+}
+
+.datos{
+  margin: 30px 0;
+}
+
+.datos .titulo{
+  font-weight: 500;
+  color: #5C5C5C;
+  padding: 25px;
+  border-bottom: 1px solid black;
+  font-size: 2.1rem;
+}
+
+.datos .informacion{
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+}
+
+.datos .informacion .parametro{
+  padding: 10px 10%;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.datos .informacion .parametro label{
+  font-style: normal;
+  font-weight: bolder;
+}
+
+.datos .informacion .parametro label::after{
+  content: ': '
+}
+
+
+
+.datos .botones{
+  display: grid;
+  margin: 40px 0;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+}
+
+.datos .botones .button{
+  width: 70%;
+  height: 40px;
+  background-color: #37813D;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+}
+
+.datos .botones .button:hover{
+  cursor: url('../img/cursorHW.cur'), pointer;
+}
+
+@media (max-width: 700px) {
+  .datos .informacion{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .datos .informacion .parametro{
+    margin: auto;
+  }
+
+  .botoncito{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 15px;
+  }
+
+  .datos .botones{
+    display: grid;
+    margin: 40px 0;
+    grid-template-columns: 100%;
+    grid-row-gap: 15px;
+  }
+
+  .usuario{
+    position: relative;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 100px;
+  }
+
+  .usuario .texto{
+    position: relative;
+    background-color: #AEDCC0;
+    top: -70px;
+    width: 50%;
+    min-width: 140px;
+    border-radius: 0.5em;
+    padding: 15px 25px;
+    margin: 0 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+  }
+}

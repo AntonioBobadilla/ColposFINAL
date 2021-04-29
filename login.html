@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/login.css">
+	<title>Log in</title>
+</head>
+<body>
+
+	<section class="container-flex">
+		<div class="container-izq">
+			<div class="img">
+				<img src="img/colpos-1.png" alt="">
+			</div>
+
+			<h1>Login</h1>
+			<li class="error" ></li>
+			<form action="javascript:void(0);">
+				<div class="card">
+					<label for="usuario">Nombre de usuario</label>
+					<input type="text" id="usuario" name="usuario" required>
+				</div>
+
+				<div class="card">
+					<label for="contrasena">Contraseña</label>
+					<input type="password" id="contrasena" name="contraseña" required>
+				</div>
+
+				<input type="submit" value="iniciar sesion" onclick="control()">
+
+			</form>
+
+			<div class="labels">
+				<a href="#">Olvidé mi contraseña</a>
+				<a href="registro.html">Registrarse</a>
+			</div>
+		</div>
+		<div class="container-der">
+			<div class="img-svg">
+				<img src="img/plant-1.svg" alt="">
+			</div>
+
+		</div>
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

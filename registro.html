@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registroStyles.css">
+    <title>Registro</title>
+</head>
+<body>
+
+    <div class="contenedor__general">
+    <form action="javascript:void(0);" id="form__principal">
+        <div class="izquierda">
+            <div class="logo__colpos">
+
+            </div>
+
+            <div class="contenedor__form__izquierda">
+                <h2>Registro</h2>
+                    <div class="elemento">
+                        <label for="nombreUsuario">Nombre de usuario</label><br>
+                        <input type="text" name="nombreUsuario" id="nombreUsuario" required>
+                    </div>
+
+                    <div class="elemento">
+                        <label for="contrasenia">Contraseña</label><br>
+                        <input type="password" name="contrasenia" id="contrasenia" required>
+                    </div>
+
+
+                    <div class="elemento">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+
+
+                    <div class="elemento">
+                        <label for="apellidoPaterno">Apellido Paterno</label><br>
+                        <input type="text" name="apellidoPaterno" id="apellidoPaterno" required>
+                    </div>
+
+                    <div class="elemento">
+                        <label for="apellidoMaterno">Apellido Materno</label><br>
+                        <input type="text" name="apellidoMaterno" id="apellidoMaterno" required>
+                    </div>
+
+
+
+                    <div class="elemento">
+                        <label for="fechaNacimineto">Fecha de nacimiento</label><br>
+                        <input type="date" name="fechaNacimineto" id="fechaNacimineto" required>
+                    </div>
+
+
+            </div>
+        </div>
+        <hr>
+        <div class="derecha">
+            <div class="contenedor__form__derecha">
+                <div class="elemento">
+                    <label for="emailUsuario">Email</label><br>
+                    <input type="email" name="emailUsuario" id="emailUsuario">
+                </div>
+
+                <div class="elemento">
+                    <label for="noCelular">Celular</label><br>
+                    <input type="text" name="noCelular" id="noCelular">
+                </div>
+
+                <div class="elemento">
+                    <label for="codigoPostal">Codigo Postal</label><br>
+                    <input type="text" name="codigoPostal" id="codigoPostal">
+                </div>
+
+                <div class="elemento">
+                    <label for="estado">Estado</label><br>
+                    <input type="text" name="estado" id="estado">
+                </div>
+
+                <div class="elemento">
+                    <label for="ciudad">Ciudad</label><br>
+                    <input type="text" name="ciudad" id="ciudad">
+                </div>
+
+                <div class="elemento">
+                    <label for="calle">Calle</label><br>
+                    <input type="text" name="calle" id="calle">
+                </div>
+
+
+
+                <input type="submit" value="Registrarme" onclick="postUser()">
+
+
+
+            </div>
+        </div>
+
+    </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/registro.js"></script>
+
+
+</body>
+</html>
