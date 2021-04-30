@@ -1,29 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/globales.css">
+	  <link rel="stylesheet" href="css/navbar.css">
+	  <link rel="stylesheet" href="css/editinformacionStyles.css">
+    <title>Actualizar Datos</title>
   </head>
+
+  <header>
+    <nav >
+      <div class="nav-logo">
+        <a href="categorias.html">
+          <img src="img/colpos-1.png" alt="">
+        </a>
+
+      </div>
+
+      <ul id="nav">
+        <li><a href="categorias.html">Categorias</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="user.html">Perfil</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+</header>
+
+
   <body onload="control()">
+
+    <h1>Actualizacion de Datos </h1>
+
     <form action="javascript:void(0);" id="form__principal">
-      <input type="text" name="nombreUsuario" id="nombreUsuario" required>
-      <input type="text" name="nombre" id="nombre" required>
-      <input type="text" name="apellidoPaterno" id="apellidoPaterno" required>
-      <input type="text" name="apellidoMaterno" id="apellidoMaterno" required>
-      <input type="text" name="fechaNacimineto" id="fechaNacimineto" required>
-      <input type="email" name="emailUsuario" id="emailUsuario">
-      <input type="text" name="noCelular" id="noCelular">
-      <input type="text" name="codigoPostal" id="codigoPostal">
-      <input type="text" name="estado" id="estado">
-      <input type="text" name="ciudad" id="ciudad">
-      <input type="text" name="calle" id="calle">
-      <input type="hidden" name="calle" id="idUsuario">
-      <input type="hidden" name="calle" id="idDatosUsuario">
-      <input type="hidden" name="calle" id="idUbicacion">
-      <br>
-      <input type="password" name="contrasenia" placeholder="ingresa contraseña para confirmar" id="contrasenia" required>
-      <input type="submit" value="Actualizar" onclick="actualizar()">
+
+        <div class="casilla">
+          <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Usuario" required>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        </div>
+
+        <div class="casilla">
+          <input type="text" name="apellidoPaterno" id="apellidoPaterno"  placeholder="Apellido Paterno" required>
+          <input type="text" name="apellidoMaterno" id="apellidoMaterno"  placeholder="Apellido Materno" required>
+        </div>
+
+        <div class="casilla">
+          <input type="text" name="fechaNacimineto" id="fechaNacimineto"  placeholder="Fecha Nacimiento" required>
+          <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Email" >
+        </div>
+        
+        <div class="casilla">
+          <input type="text" name="noCelular" id="noCelular" placeholder="Celular">
+          <input type="text" name="codigoPostal" id="codigoPostal" placeholder="Codigo Postal">
+        </div>
+        
+        <div class="casilla">
+          <input type="text" name="estado" id="estado" placeholder="Estado" >
+          <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" >
+        </div>
+        
+
+        <div class="casilla">
+          <input type="text" name="calle" id="calle" placeholder="Calle">
+          <input type="text" name="calle" id="idUsuario" placeholder="Calles">
+        </div>
+        
+        <!-- <div class="casilla">
+          <input type="hidden" name="calle" id="idDatosUsuario" placeholder="Calle">
+          <input type="hidden" name="calle" id="idUbicacion" placeholder="Ubicacion">
+        </div> -->
+        
+        
+        <input type="password" name="contrasenia" placeholder="ingresa contraseña para confirmar" id="contrasenia" required>
+        <input type="submit" value="Actualizar" onclick="actualizar()">
     </form>
+
+
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/editInformacion.js"></script>
