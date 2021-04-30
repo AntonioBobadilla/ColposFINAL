@@ -24,7 +24,7 @@ function control() {
       document.getElementById('imagenVista').alt = data.productos[0].nombre;
       document.getElementById('disponibles').value = data.productos[0].disponibles;
       document.getElementById('precio').value = data.productos[0].precio;
-      $(".botones").html("<button type='button' class='button' onclick='borrar(" + data.productos[0].id + ")'>Borrar producto</button><button type='button' class='button' onclick='regresar()'>Regresar</button>");
+      $(".botones").html("<i class='far fa-trash-alt buttons' alt='borrar' onclick='borrar(" + data.productos[0].id + ")'></i><i class='fas fa-undo-alt buttons' onclick='regresar()'></i>");
     },
     data: {id: id}
   });
