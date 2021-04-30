@@ -1,7 +1,7 @@
 function cambiar(){
   myStorage = window.localStorage;
   if($('#antigua').val() == localStorage.getItem('pass') && $('#nueva').val() == $('#nueva2').val()){
-    let url = "http://localhost:8133/api/updateContrasenia";
+    let url = "http://35.223.20.167:8133/api/updateContrasenia";
     console.log($('#nueva').val());
     console.log($('#antigua').val());
     console.log(localStorage.getItem('pass'));
