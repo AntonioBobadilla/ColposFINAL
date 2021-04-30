@@ -1,10 +1,21 @@
 function editar(n){
-  alert("Editando el archivo #"+n);
+  window.location.href = "editarProducto.html?id="+n;
 }
 
 function borrar(n){
   if(confirm("Seguro que quieres borrar el producto #"+n)){
-    alert("Producto Borrado");
+    let url = "http://35.223.20.167:8133/api/deleteProduct";
+
+    $.ajax({
+      url: url,
+      type: 'DELETE',
+      dataType: 'json',
+      contentType: 'application/json',
+      success: function(data){
+        console.log(data);
+      },
+      data: JSON.stringify({id: n})
+    });
   }
 }
 

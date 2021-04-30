@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="control()">
+    <form class="formulario" action="javascript:void(0)">
+      <input type="hidden" id="id" value="">
+      <input type="text" placeholder="nombre" id="nombre" value="">
+      <input type="text" placeholder="descripcion" id="descripcion" value="">
+      <input type="text" placeholder="imagen" id="imagen" value="">
+      <img src="" alt="" id="imagenVista" class="imagen">
+      <input type="text" placeholder="disponibles" id="disponibles" value="">
+      <input type="text" placeholder="precio" id="precio" value="">
+      <div class="checks"></div>
+      <input type='submit' value='Guardar Producto' id='guardar' onclick="guardarUnProd()">
+    </form>
+    <div class="botones">
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/editProduct.js"></script>
+</html>
