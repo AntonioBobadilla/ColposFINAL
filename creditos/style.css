@@ -1,0 +1,195 @@
+/*// BASE STYLES //*/
+
+html, body{
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.grass, .sky, .road{
+  position: relative;
+}
+
+.sky{
+  height: 40%;
+  background: skyblue;
+}
+
+.grass{
+  height: 30%;
+  background: seagreen;
+}
+
+.road{
+  height: 30%;
+  background: dimgrey;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+
+.lines{
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+}
+
+/*// ELEMENTS TO ANIMATE //*/
+
+
+.mario {
+	position: absolute;
+	top:-40px;
+	left:0px;
+	animation:drive 5s both infinite linear,
+		      jump 1.2s 1.2s ease infinite;
+}
+
+
+.luigi {
+	position: absolute;
+	top:80px;
+	left:0;
+	animation-name:drive;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.cloud {
+	position: absolute;
+}
+
+
+
+.cloud:nth-child(1){
+	width: 280px;
+	top:120px;
+	opacity: 0.5;
+	animation: wind 20s linear infinite reverse;
+}
+
+.cloud:nth-child(2){
+	width: 300px;
+	top:0;
+	animation: wind 30s linear infinite reverse;
+}
+
+.cloud:nth-child(3){
+	width: 90px;
+	top:380px;
+	z-index: 3;
+	animation: winda 11s linear infinite reverse;
+
+}
+
+.cloud:nth-child(4){
+	width: 90px;
+	top:380px;
+	z-index: 3;
+	transform: translateX(-200px);
+	animation: winda 9s linear infinite reverse;
+	animation-delay: 3s;
+}
+
+.cloud:nth-child(5){
+	width: 170px;
+	top:20px;
+	animation: winda 9s linear infinite reverse;
+}
+
+.pipe1 {
+	position: absolute;
+	width: 100px;
+	top:210px;
+	left: 600px;
+}
+
+.pipe2 {
+	position: absolute;
+	width: 100px;
+	top:210px;
+	left: 20px;
+}
+
+.flor {
+	width: 100px;
+}
+
+.flor:nth-child(1){
+	position: absolute;
+	left: 200px;
+}
+
+.flor:nth-child(2){
+	position: absolute;
+	top:80px;
+	right: 200px;
+}
+
+.nombres1 {
+	width: 450px;
+	position: absolute;
+	transform: translateX(-380px);
+	animation: windas 20s linear infinite reverse;
+}
+
+.nombres2 {
+	width: 450px;
+	position: absolute;
+	transform: translateX(-380px);
+	animation: windas 20s linear infinite reverse;
+	animation-delay: 5s;
+}
+
+.nombres3 {
+	width: 450px;
+	position: absolute;
+	transform: translateX(-380px);
+	animation: windas 20s linear infinite reverse;
+	animation-delay: 10s;
+}
+
+.nombres4 {
+	width: 450px;
+	position: absolute;
+	transform: translateX(-380px);
+	animation: windas 20s linear infinite reverse;
+	animation-delay: 15s;
+}
+
+/*// KEYFRAMES //*/
+
+@keyframes drive {
+	from{ transform: translateX(-200px)}
+	to{ transform: translateX(2000px)}
+}
+
+@keyframes wind {
+	from{left:-300px}
+	to{left:100%}
+}
+
+@keyframes winda {
+	from{right:-300px}
+	to{right:100%}
+}
+
+@keyframes windas {
+	from{right:-880px}
+	to{right:100%}
+}
+@keyframes jump{
+	0%{ top:-40px }
+	50%{ top:-100px }
+	100%{top:-40px }
+}
+
+
+
