@@ -18,7 +18,7 @@ function postUser() {
     contentType: 'application/json',
     success: function(data){
       console.log(data);
-      let tabla1 = "<thead><tr><th scope='col'>ID</th><th scope='col'>Usuario</th><th scope='col'>idDatosUsuario</th><th scope='col'>Correo</th><th scope='col'>Celular</th><th scope='col'>idUbicacion</th></tr></thead><tbody>";
+      let tabla1 = "<thead class='table-primary'><tr><th scope='col'>ID</th><th scope='col'>Usuario</th><th scope='col'>idDatosUsuario</th><th scope='col'>Correo</th><th scope='col'>Celular</th><th scope='col'>idUbicacion</th></tr></thead><tbody>";
       data.usuarios.forEach( item => {
         tabla1 += "<tr>";
         tabla1 += "<td>" + item.id + "</td>";
@@ -31,7 +31,7 @@ function postUser() {
       });
       $('#tablita1').html(tabla1);
 
-      let tabla2 = "<thead><tr><th scope='col'>ID</th><th scope='col'>Codigo Postal</th><th scope='col'>Estado</th><th scope='col'>Ciudad</th><th scope='col'>Calle</th></tr></thead><tbody>";
+      let tabla2 = "<thead class='table-dark'><tr><th scope='col'>ID</th><th scope='col'>Codigo Postal</th><th scope='col'>Estado</th><th scope='col'>Ciudad</th><th scope='col'>Calle</th></tr></thead><tbody>";
       data.ubicacions.forEach( item => {
         tabla2 += "<tr>";
         tabla2 += "<td>" + item.id + "</td>";
@@ -43,7 +43,7 @@ function postUser() {
       });
       $('#tablita2').html(tabla2);
 
-      let tabla3 = "<thead><tr><th scope='col'>ID</th><th scope='col'>Nombre</th><th scope='col'>Apellido Paterno</th><th scope='col'>Apellido Materno</th><th scope='col'>Nacimiento</th></tr></thead><tbody>";
+      let tabla3 = "<thead class='table-danger'><tr><th scope='col'>ID</th><th scope='col'>Nombre</th><th scope='col'>Apellido Paterno</th><th scope='col'>Apellido Materno</th><th scope='col'>Nacimiento</th></tr></thead><tbody>";
       data.datosUsuarios.forEach( item => {
         tabla3 += "<tr>";
         tabla3 += "<td>" + item.id + "</td>";
