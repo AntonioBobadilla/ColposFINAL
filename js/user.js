@@ -18,7 +18,19 @@ function postUser() {
       }
       $('#texto1').html(data.datosUsuarios[0].nombre);
       $('#texto2').html(data.user[0].usuario);
-      let web = "<p class='parametro'><label>Nombre</label>" + data.datosUsuarios[0].nombre + "</p>";
+
+      $('#nombre').html(data.datosUsuarios[0].nombre);
+      $('#usuario').html(data.user[0].usuario);
+      $('#correo').html(data.user[0].correo);
+      $('#ciudad').html(data.ubicacions[0].ciudad);
+      $('#cp').html(data.ubicacions[0].codigoPostal);
+      $('#apellidos').html(data.datosUsuarios[0].apellidoPaterno + " " + data.datosUsuarios[0].apellidoMaterno);
+      $('#nacimiento').html(data.datosUsuarios[0].nacimiento);
+      $('#celular').html(data.user[0].celular);
+      $('#estado').html(data.ubicacions[0].estado);
+      $('#calle').html(data.ubicacions[0].calle);
+
+      /*let web = "<p class='parametro'><label>Nombre</label>" + data.datosUsuarios[0].nombre + "</p>";
       web += "<p class='parametro'><label>Apellidos</label>" + data.datosUsuarios[0].apellidoPaterno + " " + data.datosUsuarios[0].apellidoMaterno + "</p>";
       web += "<p class='parametro'><label>Usuario</label>" + data.user[0].usuario + "</p>";
       web += "<p class='parametro'><label>Nacimiento</label>" + data.datosUsuarios[0].nacimiento + "</p>";
@@ -28,7 +40,7 @@ function postUser() {
       web += "<p class='parametro'><label>Estado</label>" + data.ubicacions[0].estado + "</p>";
       web += "<p class='parametro'><label>Ciudad</label>" + data.ubicacions[0].ciudad + "</p>";
       web += "<p class='parametro'><label>Calle</label>" + data.ubicacions[0].calle + "</p>";
-      $('.informacion').html(web);
+      $('.informacion').html(web);*/
     },
     data: myuser
   });

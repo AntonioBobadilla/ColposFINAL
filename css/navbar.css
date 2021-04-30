@@ -18,9 +18,32 @@ header nav ul {
 header nav ul li {
 	list-style: none;
 	margin-left: 35px;
+	padding:6px;
 }
+
+header nav ul li.register {
+	border:2px solid #49ab7f;
+}
+header nav ul li.register a {
+	color:#49ab7f;
+}
+
+header nav ul li.login {
+	border:2px solid #bc4710;
+}
+header nav ul li.login a {
+	color:#bc4710;
+}
+
 header nav ul li a {
 	text-decoration: none;
+	color:#0c98e9;
+	font-weight: 400;
+	transition: 0.5s ease;
+}
+
+header nav ul li a:hover {
+	color:#941c2f;
 }
 
 .hamburger {
