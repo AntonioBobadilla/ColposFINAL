@@ -34,7 +34,7 @@
     -moz-box-shadow: 10px 10px 48px -19px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 48px -19px rgba(0,0,0,0.75);
     border-radius: 30px;
-    
+
 }
 
 .contenedor__principal .tarjeta__principal .izquierda {
@@ -45,14 +45,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 30px 0 0 30px;
-    
+
 }
 
 .contenedor__principal .tarjeta__principal .izquierda .imagen__prod {
     position: absolute;
     height: 30vmax;
     width: 28vmax;
-    background-image: url('https://images.unsplash.com/photo-1557844352-761f2565b576?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,10 +101,10 @@
 .contenedor__principal .tarjeta__principal .derecha .vendedor p a {
     text-decoration: none;
     color: #7c898b;
-    
+
 }
 
-.contenedor__principal .tarjeta__principal .derecha .vendedor p a:hover { 
+.contenedor__principal .tarjeta__principal .derecha .vendedor p a:hover {
     text-decoration: underline;
 }
 .contenedor__principal .tarjeta__principal .derecha .precio {
@@ -156,13 +155,13 @@
     background: #fff;
     border: 1px solid #000;
     cursor: pointer;
-    
+
 }
 
 
 
 @media (max-width: 1400px) {
-    
+
 .contenedor__principal .tarjeta__principal .derecha {
     height: 100%;
     width: 70%;
@@ -177,19 +176,19 @@
 }
 
 }
-  
 
 
 
-@media (max-width: 1100px) { 
+
+@media (max-width: 1100px) {
 
     .contenedor__principal {
 
         height: 100vh;
         width: 100%;
-    
+
     }
-    
+
 
 
     .contenedor__principal .tarjeta__principal {
@@ -206,11 +205,11 @@
         align-items: center;
         border-radius: 0;
         padding: 0;
-        
+
     }
 
     .contenedor__principal .tarjeta__principal .izquierda .imagen__prod {
-        
+
         height: 90%;
         width: 90%;
         border-radius: 5px;
@@ -231,7 +230,7 @@
         border-radius: 0;
     }
 
-        
+
     .contenedor__principal .tarjeta__principal .derecha .nombre h2 {
         font-size: 3vmax;
 
@@ -259,10 +258,10 @@
     .contenedor__principal .tarjeta__principal .derecha .vendedor p a {
         text-decoration: none;
         color: #7c898b;
-        
+
     }
 
-    .contenedor__principal .tarjeta__principal .derecha .vendedor p a:hover { 
+    .contenedor__principal .tarjeta__principal .derecha .vendedor p a:hover {
         text-decoration: underline;
     }
     .contenedor__principal .tarjeta__principal .derecha .precio {
@@ -314,21 +313,12 @@
         background: #fff;
         border: 1px solid #000;
         cursor: pointer;
-        
+
     }
-    
+
 
 
 
 
 
 }
-
-
-
-
-
-
-
-
-
