@@ -8,7 +8,7 @@
 *{
   margin: 0;
   padding: 0;
-  cursor: url('../img/cursor.cur'), default;
+  cursor: default;
   box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ a{
 }
 
 body{
-  background-color: var(--color-primario);
+  /*background-color: var(--color-primario);*/
 }
 
 .header{
@@ -27,7 +27,6 @@ body{
 }
 
 .header .logo{
-  background-color: var(--color-primario);
   background-image: url('../img/colpos-1.png');
   background-position: center left;
   background-repeat: no-repeat;
@@ -98,7 +97,7 @@ body{
   background-color: #FE5E41;
   color: var(--color-primario);
   box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
-  cursor: url('../img/cursorHW.cur'), pointer;
+  cursor: pointer;
   transition: 0.4s;
 }
 
@@ -160,7 +159,7 @@ body{
 }
 
 .datos .botones .button:hover{
-  cursor: url('../img/cursorHW.cur'), pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
@@ -203,3 +202,185 @@ body{
     box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
   }
 }
+
+/* styles 2 */
+
+.profile {
+  width: 100%;
+  height: auto;
+}
+.profile .banner-profile {
+  width: 100%;
+  height: 250px;
+  background:url('../img/banner-profile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile .img-perfil {
+  width: 140px;
+  height: 140px;
+  clip-path: circle(50%);
+  position: relative;
+  top:-60px;
+  left: 40px;
+}
+
+.profile .img-perfil img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.profile .info-perfil {
+  width: 400px;
+  height: auto;
+  position: relative;
+  left:220px;
+  top:-120px;
+}
+
+.profile .info-perfil h2 {
+  color:#272838;
+}
+
+.profile .info-perfil h4 {
+  color:#7e7f9a;
+  font-weight: 300;
+  margin-top: 7px;
+  font-size:17px;
+}
+
+.profile .info-perfil i {
+  position: relative;
+  top:-50px;
+  left:1200px;
+  width: 59px;
+  clip-path: circle(50%);
+  font-size: 20px;
+  padding:20px;
+  color:#fff;
+  background:#1c3041;
+  text-align: center;
+  transition:0.5s ease;
+}
+
+.profile .info-perfil i:hover {
+  cursor: pointer;
+  background:#c1666b;
+}
+
+.profile hr {
+  color:#C2C2C2;
+}
+
+.profile .flex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profile .flex .info-usuario  {
+  position: relative;
+  top:-80px;
+  left:50px;
+  width: 800px;
+  height: 200px;
+  padding:30px;
+  margin:20px;
+  border:1px solid rgba(173,173,173,.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: -10px 9px 8px -9px rgba(173,173,173,1);
+  -moz-box-shadow: -10px 9px 8px -9px rgba(173,173,173,1);
+   box-shadow: -10px 9px 8px -9px rgba(173,173,173,1);
+}
+
+.profile .flex .info-usuario .div-1 {
+  width: 60%;
+  height: auto;
+}
+.profile .flex .info-usuario .div-2 {
+  width: 40%;
+  height: auto;
+}
+.profile .flex .info-usuario p {
+  margin-bottom: 5px;
+}
+.profile .flex .info-usuario .edit-data {
+  font-size: 40px;
+  margin-right: 20px;
+  color:#1c3041;
+  transition:0.5s ease;
+}
+
+.profile .flex .info-usuario .edit-data:hover {
+  cursor: pointer;
+  color:#2d93ad;
+}
+
+.profile .flex .caja {
+  position: relative;
+  top:-80px;
+  left:50px;
+  width: 200px;
+  height: 100px;
+  margin-right: 60px;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background:#1c3041;
+  -webkit-box-shadow: -10px 9px 8px -9px rgba(173,173,173,1);
+  -moz-box-shadow: -10px 9px 8px -9px rgba(173,173,173,1);
+   box-shadow: -10px 9px 8px -9px rgba(173,173,173,1);
+}
+
+.profile .flex .caja:hover {
+  cursor: pointer;
+}
+
+.profile .flex .caja a{
+  color:#FFF;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width: 1068px) {
+  .profile .info-perfil i {
+    left:500px;
+  }
+  .profile .flex .info-usuario  {
+    position: relative;
+    top:-80px;
+    left:0px;
+    width: 72vw;
+    height: 200px;
+    padding:30px;
+    margin:20px;
+  }
+ }
+
+ @media screen and (max-width: 1068px) {
+    .profile .flex .info-usuario  {
+      flex-direction: column;
+      height: auto;
+    }
+    .profile .flex .info-usuario .div-1 {
+      width: 90%;
+    }
+    .profile .flex .info-usuario .div-2 {
+      width: 90%;
+    }
+    .profile .flex .info-usuario .edit-data {
+      margin-top: 30px;
+    }
+    .profile .info-perfil i {
+      left:200px;
+    }
+ }

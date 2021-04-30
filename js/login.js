@@ -21,7 +21,6 @@ function postUser() {
       if(data.error){
         $('.error').html("Datos incorrectos.");
       }else{
-          console.log("asdasd");
           myStorage = window.localStorage;
           localStorage.setItem('user', usuario);
           localStorage.setItem('pass', pwd);

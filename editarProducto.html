@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/globales.css/">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/editarProducto.css">
+    <title>Editar producto</title>
+  </head>
+  <body onload="control()">
+    <header>
+        <nav >
+          <div class="nav-logo">
+            <a href="categorias.html">
+              <img src="img/colpos-1.png" alt="">
+            </a>
+
+          </div>
+
+          <ul id="nav">
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="user.html">Perfil</a></li>
+          </ul>
+          <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+    </header>
+    <h1>Editar producto</h1>
+    <form class="formulario" action="javascript:void(0)">
+      <input type="hidden" id="id" value="">
+      <label for="nombre">Nombre</label>
+      <input type="text" placeholder="nombre" id="nombre" value="">
+      <label for="descripcion">Descripcion</label>
+      <input type="text" placeholder="descripcion" id="descripcion" value="">
+      <label for="imagen">Imagen: </label>
+      <input type="text" placeholder="imagen" id="imagen" value="">
+      <img src="" alt="" id="imagenVista" class="imagen">
+      <label for="disponibles">Disponibles:</label>
+      <input type="text" placeholder="disponibles" id="disponibles" value="">
+      <label for="precio">Precio</label>
+      <input type="text" placeholder="precio" id="precio" value="">
+      <label>Categoria</label>
+      <div class="checks"></div>
+      <input type='submit' value='Guardar Producto' id='guardar' onclick="guardarUnProd()">
+    </form>
+    <div class="botones">
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/editProduct.js"></script>
+  <script src="js/navbar.js"></script>
+
+</html>

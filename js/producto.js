@@ -8,7 +8,7 @@ function getAllProduct(){
     success: function(data){
       let product = "";
       data.productos.forEach(item => {
-        product += "<div class='card'><div class='imagen-card'><img src='" + item.imagen + "' alt=''></div><div class='titulo-card'><a href='#'>Ver " + item.nombre + "</a></div></div>";
+        product += "<div class='card'><div class='imagen-card'><img src='" + item.imagen + "' alt=''></div><div class='titulo-card'><a href='detalleProducto.html?id=" + item.id + "'>Ver " + item.nombre + "</a></div></div>";
       });
       $('.wrap-categorias').html(product);
 
@@ -49,7 +49,7 @@ function getProduct(id){
           let htmlP = "";
 
           products.forEach( item => {
-            htmlP += "<div class='card'><div class='imagen-card'><img src='" + item.imagen + "' alt=''></div><div class='titulo-card'><a href='#'>Ver " + item.nombre + "</a></div></div>";
+            htmlP += "<div class='card'><div class='imagen-card'><img src='" + item.imagen + "' alt=''></div><div class='titulo-card'><a href='detalleProducto.html?id=" + item.id + "'>Ver " + item.nombre + "</a></div></div>";
           });
           $('.wrap-categorias').html(htmlP);
         },

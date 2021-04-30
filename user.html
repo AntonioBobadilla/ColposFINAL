@@ -24,39 +24,55 @@
       <li><a href="categorias.html">Categorias</a></li>
       <li><a href="usuarios.html">Usuarios</a></li>
       <li><a href="user.html">Perfil</a></li>
-      <li><a href="#">Cerrar Sesión</a></li>
     </ul>
     <button class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" ></i>
     </button>
   </nav>
 </header>
-    <div class="perfil">
-      <div class="usuario">
-        <div class="foto" id="fotito"></div>
-        <div class="texto">
-          <h3 id="texto1"></h3>
-          <p id="texto2"></p>
-        </div>
-      </div>
-      <div class="botoncito">
-      <button type="button" class="cerrarSesion" onclick="cerrar()">Cerrar la sesion</button>
-      <button type="button" class="cerrarSesion" onclick="redirect1()">Ver mis productos</button>
-      </div>
+  <section class="profile">
+    <section class="banner-profile">
 
-      <section class="datos">
-        <p class="titulo">Informacion de perfil</p>
-        <div class="informacion">
-        </div>
-        <div class="botones">
-          <button type="button" class="button">Modificar los Datos</button>
-          <button type="button" class="button">Cambiar Contraseña</button>
-        </div>
-      </section>
+    </section>
+    <div class="img-perfil">
+      <img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="">
     </div>
+    <div class="info-perfil">
+      <h2 id="texto1"></h2>
+      <h4 id="texto2"></h4>
+      <i class="fas fa-sign-out-alt" onclick="cerrar()"></i>
+    </div>
+    <div class="flex">
+      <div class="info-usuario">
+        <div class="div-1">
+            <p><b>Nombre:&nbsp;  </b><span id="nombre"></span></p>
+            <p><b>Usuario:&nbsp;  </b><span id="usuario"></span></p>
+            <p><b>Correo:&nbsp;  </b><span id="correo"></span></p>
+            <p><b>CP:  </b><span id="cp"></span></p>
+            <p><b>Ciudad:&nbsp;  </b><span id="ciudad"></span></p>
+        </div>
+        <div class="div-2">
+            <p><b>Apellidos:&nbsp;  </b><span id="apellidos"></span></p>
+            <p><b>Nacimiento:&nbsp;  </b><span id="nacimiento"></span></p>
+            <p><b>Celular:&nbsp;  </b><span id="celular"></span></p>
+            <p><b>Estado:&nbsp;  </b><span id="estado"></span></p>
+            <p><b>Calle:&nbsp;  </b><span id="calle"></span></p>
+        </div>
+        <i class="fas fa-pen-square edit-data" onclick="editarInformacion()"></i>
+      </div>
+      <div class="caja roja" onclick="redirect1()">
+        <a>Ver mis productos</a>
+      </div>
+      <div class="caja azul">
+        <a href="nuevacontrasena.html">Cambiar contraseña</a>
+      </div>
+    </div>
+
+  </section>
   </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/user.js"></script>
+<script src="js/navbar.js"></script>
 
 </html>
