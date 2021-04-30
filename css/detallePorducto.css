@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+.contenedor__principal {
+
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor__principal .tarjeta__principal {
+    height: 90%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    -webkit-box-shadow: 10px 10px 48px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 48px -19px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 48px -19px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    
+}
+
+.contenedor__principal .tarjeta__principal .izquierda {
+    height: 100%;
+    width: 30%;
+    background: #c33c54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 0 0 30px;
+    
+}
+
+.contenedor__principal .tarjeta__principal .izquierda .imagen__prod {
+    position: absolute;
+    height: 30vmax;
+    width: 28vmax;
+    background-image: url('https://images.unsplash.com/photo-1557844352-761f2565b576?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 20vmax;
+    -webkit-box-shadow: 10px 10px 58px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 58px -19px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 58px -19px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+
+.contenedor__principal .tarjeta__principal .derecha {
+    height: 100%;
+    width: 70%;
+    padding: 100px 100px 100px 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #eee5e5;
+    border-radius: 0 30px 30px 0;
+}
+
+
+.contenedor__principal .tarjeta__principal .derecha .nombre h2 {
+    font-size: 2.2vmax;
+
+}
+.contenedor__principal .tarjeta__principal .derecha .nombre hr {
+    margin-top: 10px;
+    width: 30%;
+    height: 5px;
+    background: #000;
+    border: none;
+}
+
+.contenedor__principal .tarjeta__principal .derecha .descripcion p {
+    font-size: 1.1vmax;
+
+}
+
+.contenedor__principal .tarjeta__principal .derecha .vendedor p {
+    font-size: 1.1vmax;
+    text-decoration: none;
+    color: #000;
+}
+.contenedor__principal .tarjeta__principal .derecha .vendedor p a {
+    text-decoration: none;
+    color: #7c898b;
+    
+}
+
+.contenedor__principal .tarjeta__principal .derecha .vendedor p a:hover { 
+    text-decoration: underline;
+}
+.contenedor__principal .tarjeta__principal .derecha .precio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.contenedor__principal .tarjeta__principal .derecha .precio hr {
+    width: 15%;
+    height: 5px;
+    background: #000;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.contenedor__principal .tarjeta__principal .derecha .precio p {
+    font-size: 2vmax;
+    font-weight: bold;
+
+}
+
+
+.contenedor__principal .tarjeta__principal .derecha .boton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.contenedor__principal .tarjeta__principal .derecha .boton button {
+    width: 30%;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+    font-size: 1vmax;
+
+}
+
+.contenedor__principal .tarjeta__principal .derecha .boton button:hover {
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    
+}
+
+
+
+@media (max-width: 1400px) {
+    
+.contenedor__principal .tarjeta__principal .derecha {
+    height: 100%;
+    width: 70%;
+    padding: 100px 100px 100px 15vmax;
+}
+
+
+
+.contenedor__principal .tarjeta__principal .derecha .boton button {
+    width: 60%;
+    height: 40px;
+}
+
+}
+  
+
+
+
+@media (max-width: 1100px) { 
+
+    .contenedor__principal {
+
+        height: 100vh;
+        width: 100%;
+    
+    }
+    
+
+
+    .contenedor__principal .tarjeta__principal {
+        flex-direction: column-reverse;
+        height: 90%;
+        width: 90%;
+    }
+    .contenedor__principal .tarjeta__principal .izquierda {
+        height: 100%;
+        width: 100%;
+        background: #c33c54;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        padding: 0;
+        
+    }
+
+    .contenedor__principal .tarjeta__principal .izquierda .imagen__prod {
+        
+        height: 90%;
+        width: 90%;
+        border-radius: 5px;
+        position: static;
+
+    }
+
+
+    .contenedor__principal .tarjeta__principal .derecha {
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+        background: #eee5e5;
+        border-radius: 0;
+    }
+
+        
+    .contenedor__principal .tarjeta__principal .derecha .nombre h2 {
+        font-size: 3vmax;
+
+    }
+    .contenedor__principal .tarjeta__principal .derecha .nombre hr {
+        margin-top: 2px;
+        width: 30%;
+        height: 4px;
+        background: #000;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .contenedor__principal .tarjeta__principal .derecha .descripcion p {
+        font-size: 2vmax;
+        margin-bottom: 10px;
+    }
+
+    .contenedor__principal .tarjeta__principal .derecha .vendedor p {
+        font-size: 2vmax;
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    .contenedor__principal .tarjeta__principal .derecha .vendedor p a {
+        text-decoration: none;
+        color: #7c898b;
+        
+    }
+
+    .contenedor__principal .tarjeta__principal .derecha .vendedor p a:hover { 
+        text-decoration: underline;
+    }
+    .contenedor__principal .tarjeta__principal .derecha .precio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .contenedor__principal .tarjeta__principal .derecha .precio hr {
+        width: 10%;
+        height: 3px;
+        background: #000;
+        border: none;
+        margin-bottom: 5px;
+    }
+
+    .contenedor__principal .tarjeta__principal .derecha .precio p {
+        font-size: 2vmax;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+    }
+
+
+    .contenedor__principal .tarjeta__principal .derecha .boton {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor__principal .tarjeta__principal .derecha .boton button {
+        width: 80%;
+        height: 40px;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.5s ease-in-out;
+        font-size: 1.6vmax;
+
+    }
+
+    .contenedor__principal .tarjeta__principal .derecha .boton button:hover {
+        color: #000;
+        background: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+        
+    }
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
