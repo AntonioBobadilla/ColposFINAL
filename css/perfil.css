@@ -281,6 +281,7 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .profile .flex .info-usuario  {
   position: relative;
@@ -289,6 +290,7 @@ body{
   width: 800px;
   height: 200px;
   padding:30px;
+  margin:20px;
   border:1px solid rgba(173,173,173,.2);
   display: flex;
   justify-content: center;
@@ -328,6 +330,7 @@ body{
   width: 200px;
   height: 100px;
   margin-right: 60px;
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,3 +349,38 @@ body{
   color:#FFF;
   font-weight: 500;
 }
+
+
+@media screen and (max-width: 1068px) {
+  .profile .info-perfil i {
+    left:500px;
+  }
+  .profile .flex .info-usuario  {
+    position: relative;
+    top:-80px;
+    left:0px;
+    width: 72vw;
+    height: 200px;
+    padding:30px;
+    margin:20px;
+  }
+ }
+
+ @media screen and (max-width: 1068px) {
+    .profile .flex .info-usuario  {
+      flex-direction: column;
+      height: auto;
+    }
+    .profile .flex .info-usuario .div-1 {
+      width: 90%;
+    }
+    .profile .flex .info-usuario .div-2 {
+      width: 90%;
+    }
+    .profile .flex .info-usuario .edit-data {
+      margin-top: 30px;
+    }
+    .profile .info-perfil i {
+      left:200px;
+    }
+ }
