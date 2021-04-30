@@ -1,0 +1,142 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+/*  BANNER */
+.banner {
+	width: 100%;
+	height: 100vh;
+	background: url('../img/banner-1bw.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner h1 {
+	font-size: 50px;
+	color:#f2f5f7;
+} 
+
+/*  FIN BANNER */
+
+
+/* ACERCA DE */
+
+.acerca-de {
+	width: 65%;
+	height: 100vh;
+	padding:50px;
+	margin:0 auto;
+	color:#404041;
+}
+
+.acerca-de h2 {
+	font-size: 45px;
+	padding-bottom: 10px;
+	border-bottom: 4px solid #404041;
+}
+
+.acerca-de p {
+	margin-top: 30px;
+	text-align: justify;
+}
+
+.acerca-de ul {
+	margin-top: 30px;
+}
+
+.acerca-de ul li {
+	margin: 20px;
+	text-align: justify;
+}
+
+
+/* FIN ACERCA DE */
+
+
+/* 1er flexbox */
+
+.flex {
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+.flex .flex-izq {
+	width: 50%;
+	background:url('http://colpospuebla.mx/imagenes/carrusel/imagen4.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.flex .flex-der {
+	width: 50%;
+	height: auto;
+	padding:70px;
+	background:#a2c3a4;
+	text-align: justify;
+}
+
+.banner1 {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color:#404041;
+}
+
+.banner1 h3 {
+	padding-bottom: 10px;
+	border-bottom: 3px solid #404041;
+}
+
+.banner1 img {
+	margin-top: 20px;
+	width: 40%;
+	height: auto;
+}
+
+footer {
+	width: 100%;
+	height: 46px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#c880b7;
+	color:#f9f8f8;
+}
+
+footer a {
+	color:#1e2d2f;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 764px){
+	.banner h1 {
+		font-size:5vw;
+	}
+	.acerca-de {
+		height: auto;
+		width: 80%;
+	}
+	.flex {
+		flex-direction: column;
+	}
+	.flex .flex-izq {
+		width: 100%;
+		height: 400px;
+	}
+	.flex .flex-der {
+		width: 100%;
+		height: auto;
+	}
+	.banner1 h3 {
+		word-wrap: break-word;
+		width: 70%;
+	}
+}
