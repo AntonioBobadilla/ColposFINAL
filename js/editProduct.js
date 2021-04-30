@@ -68,7 +68,6 @@ function control() {
 function borrar(n){
   if(confirm("Seguro que quieres borrar el producto #"+n)){
     let url = "http://35.223.20.167:8133/api/deleteProduct";
-
     $.ajax({
       url: url,
       type: 'DELETE',
@@ -76,10 +75,11 @@ function borrar(n){
       contentType: 'application/json',
       success: function(data){
         console.log(data);
+        window.location.href = "misProductos.html";
       },
       data: JSON.stringify({id: n})
     });
-    window.location.href = "misProductos.html";
+
   }
 
 }

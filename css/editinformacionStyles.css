@@ -11,7 +11,7 @@ h1 {
 #form__principal {
     height: 100vh;
     width: 100%;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +24,6 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
 
 }
 
@@ -65,19 +64,8 @@ h1 {
  cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#form__principal #botonR{
+  position: relative;
+  top: -50px;
+  left: 0;
+}

@@ -13,6 +13,7 @@ function borrar(n){
       contentType: 'application/json',
       success: function(data){
         console.log(data);
+        window.location.href = "misProductos.html";
       },
       data: JSON.stringify({id: n})
     });

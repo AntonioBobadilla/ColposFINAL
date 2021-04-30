@@ -73,7 +73,12 @@ function actualizar(){
     data: JSON.stringify(myuser)
   });
   }else{
-    alert("Tas bien popo");
+    alert("Contraseña incorrecta");
   }
 
+}
+
+
+function regresar(){
+  window.location.href = "user.html";
 }

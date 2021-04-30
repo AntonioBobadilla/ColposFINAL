@@ -22,6 +22,6 @@ function cambiar(){
       })
     });
   }else{
-    alert("Tas pendejo, te equivocaste de contraseña");
+    alert("Revisa bien tus datos");
   }
 }
