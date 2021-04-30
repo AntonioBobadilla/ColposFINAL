@@ -62,3 +62,7 @@ function cerrar(){
 function redirect1(){
   window.location.href = 'misProductos.html';
 }
+
+function editarInformacion(){
+  window.location.href = 'editInformacion.html';
+}

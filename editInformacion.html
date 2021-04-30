@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="control()">
+    <form action="javascript:void(0);" id="form__principal">
+      <input type="text" name="nombreUsuario" id="nombreUsuario" required>
+      <input type="text" name="nombre" id="nombre" required>
+      <input type="text" name="apellidoPaterno" id="apellidoPaterno" required>
+      <input type="text" name="apellidoMaterno" id="apellidoMaterno" required>
+      <input type="text" name="fechaNacimineto" id="fechaNacimineto" required>
+      <input type="email" name="emailUsuario" id="emailUsuario">
+      <input type="text" name="noCelular" id="noCelular">
+      <input type="text" name="codigoPostal" id="codigoPostal">
+      <input type="text" name="estado" id="estado">
+      <input type="text" name="ciudad" id="ciudad">
+      <input type="text" name="calle" id="calle">
+      <input type="hidden" name="calle" id="idUsuario">
+      <input type="hidden" name="calle" id="idDatosUsuario">
+      <input type="hidden" name="calle" id="idUbicacion">
+      <br>
+      <input type="password" name="contrasenia" placeholder="ingresa contraseña para confirmar" id="contrasenia" required>
+      <input type="submit" value="Actualizar" onclick="actualizar()">
+    </form>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/editInformacion.js"></script>
+</html>
