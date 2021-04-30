@@ -8,20 +8,22 @@
 	<link rel="stylesheet" href="css/navbar.css">
 	<link rel="stylesheet" href="css/detallePorducto.css">
 	<title>Detalle Producto</title>
+	<script src="js/navbar.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/producto.js"></script>
+
+	<script src="js/detalleProducto.js"></script>
 </head>
 
-<body>
+<body onload="control()">
     <header>
         <nav >
           <div class="nav-logo">
             <a href="categorias.html">
               <img src="img/colpos-1.png" alt="">
             </a>
-  
+
           </div>
-  
+
           <ul id="nav">
             <li><a href="categorias.html">Categorias</a></li>
             <li><a href="usuarios.html">Usuarios</a></li>
@@ -43,24 +45,14 @@
                 </div>
             </div>
             <div class="derecha">
-                <div class="nombre">
-                    <h2>Nombre Producto</h2>
-                    <hr>
-                </div>
-                <div class="descripcion">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo culpa aperiam cum, voluptatum nam maxime dicta eos ducimus temporibus ut a natus impedit nulla earum autem repellendus ex expedita accusantium.
-                    </p>
-                </div>
-                <div class="vendedor">
-                    <p>Vendedor: <a href="#">Luis Donaldo Colosio</a> </p>
-                </div>
-                <div class="precio">
-                    <hr>
-                    <p>9.99$</p>   
-                </div>
+                <div class="nombre"></div>
+                <div class="descripcion" id="descripcion"></div>
+                <div class="vendedor"></div>
+								<div class="descripcion" id="disponibles"></div>
+								<div class="descripcion" id="celular"></div>
+                <div class="precio"></div>
                 <div class="boton">
-                    <button>Regresar</button>
+                    <button onclick="regresar()">Regresar</button>
                 </div>
             </div>
         </div>
