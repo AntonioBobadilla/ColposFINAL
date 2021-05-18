@@ -2,7 +2,7 @@ function control(){
   var queryString = window.location.search;
   queryString = new URLSearchParams(queryString);
   let id = queryString.get('id');
-  let url = "http://35.223.20.167:8133/api/findProduct";
+  let url = "http://35.232.232.192:8133/api/findProduct";
   $.ajax({
     url: url,
     type: 'get',
@@ -18,7 +18,7 @@ function control(){
       let informacionPR = {
         idDatosUsuario: datas.productos[0].idUsuario
       };
-      let url2 = "http://35.223.20.167:8133/api/findUserID";
+      let url2 = "http://35.232.232.192:8133/api/findUserID";
       $.ajax({
         url: url2,
         type: 'get',

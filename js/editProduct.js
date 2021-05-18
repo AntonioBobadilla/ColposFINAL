@@ -5,9 +5,9 @@ function control() {
   if(id == undefined || id == 0 || id == null || id == ""){
     window.location.href('misProductos.html');
   }
-  let url = "http://35.223.20.167:8133/api/findProduct";
-  let url2 = 'http://35.223.20.167:8133/api/getProductsCategorias';
-  let url3 = 'http://35.223.20.167:8133/api/getCategorias';
+  let url = "http://35.232.232.192:8133/api/findProduct";
+  let url2 = 'http://35.232.232.192:8133/api/getProductsCategorias';
+  let url3 = 'http://35.232.232.192:8133/api/getCategorias';
 
   $.ajax({
     url: url,
@@ -67,7 +67,7 @@ function control() {
 
 function borrar(n){
   if(confirm("Seguro que quieres borrar el producto #"+n)){
-    let url = "http://35.223.20.167:8133/api/deleteProduct";
+    let url = "http://35.232.232.192:8133/api/deleteProduct";
     $.ajax({
       url: url,
       type: 'DELETE',
@@ -95,7 +95,7 @@ function guardarUnProd(){
 
   console.log(n);
 
-  let url = "http://35.223.20.167:8133/api/updateProduct";
+  let url = "http://35.232.232.192:8133/api/updateProduct";
 
   let producto = {
     id: n,
@@ -118,8 +118,8 @@ function guardarUnProd(){
     data: JSON.stringify(producto)
   });
 
-  let url2 = 'http://35.223.20.167:8133/api/getProductsCategorias';
-  let url22 = 'http://35.223.20.167:8133/api/deleteCategoriaProducto';
+  let url2 = 'http://35.232.232.192:8133/api/getProductsCategorias';
+  let url22 = 'http://35.232.232.192:8133/api/deleteCategoriaProducto';
 
   $.ajax({
     url: url2,
@@ -145,7 +145,7 @@ function guardarUnProd(){
     data: JSON.stringify({id: id})
   });
 
-  let url3 = "http://35.223.20.167:8133/api/createCategoriaProducto";
+  let url3 = "http://35.232.232.192:8133/api/createCategoriaProducto";
 
   document.querySelectorAll('#check:checked').forEach( item => {
     console.log("Registrando id " + item.value);

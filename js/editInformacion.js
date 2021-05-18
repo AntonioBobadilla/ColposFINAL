@@ -1,5 +1,5 @@
 function control() {
-  let url = "http://35.223.20.167:8133/api/findUser";
+  let url = "http://35.232.232.192:8133/api/findUser";
   myStorage = window.localStorage;
   var myuser = {
     usuarios: localStorage.getItem('user'),
@@ -60,7 +60,7 @@ function actualizar(){
         }
     };
     console.log(myuser);
-    let url = "http://35.223.20.167:8133/api/updateUsuarios";
+    let url = "http://35.232.232.192:8133/api/updateUsuarios";
     $.ajax({
     url: url,
     type: 'put',
