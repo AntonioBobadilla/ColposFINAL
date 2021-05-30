@@ -1,5 +1,5 @@
 function getAllProduct(){
-  let url = "http://35.223.20.167:8133/api/getProducts";
+  let url = "http://35.232.232.192:8133/api/getProducts";
   $.ajax({
     url: url,
     type: 'get',
@@ -19,7 +19,7 @@ function getAllProduct(){
 
 
 function getProduct(id){
-  let url = "http://35.223.20.167:8133/api/getProducts";
+  let url = "http://35.232.232.192:8133/api/getProducts";
   $.ajax({
     url: url,
     type: 'get',
@@ -27,7 +27,7 @@ function getProduct(id){
     contentType: 'application/json',
     success: function(data){
       let proDD = data.productos;
-      let url2 = "http://35.223.20.167:8133/api/getProductsCategorias";
+      let url2 = "http://35.232.232.192:8133/api/getProductsCategorias";
 
       $.ajax({
         url: url2,

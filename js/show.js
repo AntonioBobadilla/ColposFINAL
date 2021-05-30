@@ -1,4 +1,4 @@
-var url = "http://35.223.20.167:8133/api/getUsers";
+var url = "http://35.232.232.192:8133/api/getUsers";
 
 function postUser() {
 

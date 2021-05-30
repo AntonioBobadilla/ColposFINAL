@@ -1,8 +1,8 @@
 function enviar(){
 
-  let url = 'http://35.223.20.167:8133/api/createProduct';
-  let url2 = "http://35.223.20.167:8133/api/findUser";
-  let url3 = "http://35.223.20.167:8133/api/createCategoriaProducto";
+  let url = 'http://35.232.232.192:8133/api/createProduct';
+  let url2 = "http://35.232.232.192:8133/api/findUser";
+  let url3 = "http://35.232.232.192:8133/api/createCategoriaProducto";
 
   var myuser = {
     usuarios: localStorage.getItem('user'),
@@ -65,7 +65,7 @@ function enviar(){
 
 
 function categorias(){
-  let url = 'http://35.223.20.167:8133/api/getCategorias';
+  let url = 'http://35.232.232.192:8133/api/getCategorias';
 
   $.ajax({
     url: url,

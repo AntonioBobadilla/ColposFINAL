@@ -1,4 +1,4 @@
-var url = "http://35.223.20.167:8133/api/findUser";
+var url = "http://35.232.232.192:8133/api/findUser";
 
 function postUser() {
   myStorage = window.localStorage;

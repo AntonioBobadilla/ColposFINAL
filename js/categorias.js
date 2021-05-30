@@ -1,4 +1,4 @@
-var url = "http://35.223.20.167:8133/api/getCategorias";
+var url = "http://35.232.232.192:8133/api/getCategorias";
 
 function categorias() {
   var datos = {};

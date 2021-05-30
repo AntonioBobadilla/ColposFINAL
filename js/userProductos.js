@@ -4,7 +4,7 @@ function editar(n){
 
 function borrar(n){
   if(confirm("Seguro que quieres borrar el producto #"+n)){
-    let url = "http://35.223.20.167:8133/api/deleteProduct";
+    let url = "http://35.232.232.192:8133/api/deleteProduct";
 
     $.ajax({
       url: url,
@@ -22,8 +22,8 @@ function borrar(n){
 
 
 function getProducts(){
-  let url = "http://35.223.20.167:8133/api/findUser";
-  let url2 = "http://35.223.20.167:8133/api/getProducts";
+  let url = "http://35.232.232.192:8133/api/findUser";
+  let url2 = "http://35.232.232.192:8133/api/getProducts";
 
   var myuser = {
     usuarios: localStorage.getItem('user'),
